@@ -5,7 +5,7 @@ Toml file plugin for vite.
 
 Uses [`toml` package](https://www.npmjs.com/package/toml) for parsing.
 
-## Usage
+## Install
 ```shell
 npm i -D vite-plugin-toml # yarn add -D vite-plugin-toml
 ```
@@ -30,4 +30,17 @@ declare module '*.toml' {
   const value: unknown
   export default value
 }
+```
+
+## Example
+`test.toml`
+```toml
+key = 'value'
+```
+
+`index.ts`
+```ts
+import test from './test.toml'
+
+console.log(test.key) // 'value'
 ```
