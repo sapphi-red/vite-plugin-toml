@@ -20,3 +20,14 @@ export default {
   ]
 }
 ```
+
+### Typescript
+I recommend using [typescript-plugin-toml](https://github.com/sapphi-red/typescript-plugin-toml).
+
+Alternatively, add this global declaration.
+```ts
+declare module '*.toml' {
+  const value: unknown
+  export default value
+}
+```
