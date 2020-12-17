@@ -6,7 +6,7 @@ Toml file plugin for vite.
 Uses [`toml` package](https://www.npmjs.com/package/toml) for parsing.
 
 ## Usage
-```
+```shell
 npm i -D vite-plugin-toml # yarn add -D vite-plugin-toml
 ```
 
