@@ -6,8 +6,9 @@ export const ViteToml = (): Plugin => {
     test: ({ path }) => path.endsWith('.toml'),
     transform: ({ code }) => {
       const parsed = toml.parse(code)
-      const escapedString = JSON.stringify(parsed).replace(/`/g, '\\`')
-      const newCode = `export default JSON.parse(\`${escapedString}\`)`
+      const string = JSON.stringify(parsed)
+      const quotedString = JSON.stringify(string)
+      const newCode = `export default JSON.parse(${quotedString})`
       return { code: newCode }
     }
   }
