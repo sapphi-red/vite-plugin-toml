@@ -3,6 +3,8 @@
 
 Toml file plugin for vite.
 
+> **Vite v2 is supported from `v0.2.x`, Vite v1 is not supported from this version**
+
 Uses [`toml` package](https://www.npmjs.com/package/toml) for parsing.
 
 ## Install
