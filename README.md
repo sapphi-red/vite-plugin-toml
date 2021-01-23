@@ -29,6 +29,10 @@ export default {
 
 https://github.com/LongTengDao/j-toml/tree/master/docs/English#usebigint
 
+- `namedExports` (default: `false`)
+
+Enable named exports.
+
 ### Typescript
 I recommend using [typescript-plugin-toml](https://github.com/sapphi-red/typescript-plugin-toml).
 

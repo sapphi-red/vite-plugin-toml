@@ -43,6 +43,7 @@
     "vite": "^2.0.0-beta.35"
   },
   "dependencies": {
-    "@ltd/j-toml": "^1.2.0"
+    "@ltd/j-toml": "^1.2.0",
+    "@rollup/pluginutils": "^4.1.0"
   }
 }
