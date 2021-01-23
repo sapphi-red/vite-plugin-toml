@@ -43,6 +43,6 @@
     "vite": "^2.0.0-beta.35"
   },
   "dependencies": {
-    "toml": "^3.0.0"
+    "@ltd/j-toml": "^1.2.0"
   }
 }

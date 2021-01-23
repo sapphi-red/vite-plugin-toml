@@ -5,7 +5,8 @@ Toml file plugin for vite.
 
 > **Vite v2 is supported from `v0.2.x`, Vite v1 is not supported from this version**
 
-Uses [`toml` package](https://www.npmjs.com/package/toml) for parsing.
+Uses [`@ltd/j-toml` package](https://www.npmjs.com/package/@ltd/j-toml) for parsing.
+Supports Toml 1.0.0.
 
 ## Install
 ```shell
@@ -22,6 +23,11 @@ export default {
   ]
 }
 ```
+
+### Options
+- `useBigInt` (default: `true`)
+
+https://github.com/LongTengDao/j-toml/tree/master/docs/English#usebigint
 
 ### Typescript
 I recommend using [typescript-plugin-toml](https://github.com/sapphi-red/typescript-plugin-toml).
