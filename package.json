@@ -7,7 +7,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup src/index.ts --dts --format cjs,esm",
+    "build": "tsup src/index.ts --dts --format cjs,esm --target=node12",
     "lint": "eslint --ext .ts src"
   },
   "repository": {
@@ -31,6 +31,7 @@
     "vite": "^2.0.0-beta.35"
   },
   "devDependencies": {
+    "@ltd/j-toml": "^1.2.0",
     "@typescript-eslint/eslint-plugin": "^4.14.0",
     "@typescript-eslint/parser": "^4.14.0",
     "eslint": "^7.18.0",
@@ -43,7 +44,6 @@
     "vite": "^2.0.0-beta.44"
   },
   "dependencies": {
-    "@ltd/j-toml": "^1.2.0",
     "@rollup/pluginutils": "^4.1.0"
   }
 }
