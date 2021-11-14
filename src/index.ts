@@ -17,7 +17,7 @@ export const ViteToml = ({
       return null
     }
 
-    const parsed = parse(code, 1.0, '\n', useBigInt, undefined, id)
+    const parsed = parse(code, 1.0, '\n', useBigInt, undefined)
     const newCode = dataToEsm(parsed, {
       preferConst: true,
       compact: false,
