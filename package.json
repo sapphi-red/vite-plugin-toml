@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "npm run build -- --watch",
     "build": "tsup src/index.ts --dts --format cjs,esm --target=node12",
-    "lint": "eslint --ext .ts src"
+    "lint": "eslint --ext .ts src",
+    "type-check": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
