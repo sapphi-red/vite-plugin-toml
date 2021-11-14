@@ -1,8 +1,10 @@
 name: automatic deploy
+
 on:
   push:
     tags:
       - v*
+
 jobs:
   release:
     name: deploy
@@ -13,7 +15,7 @@ jobs:
       - name: setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '14.x'
+          node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
       - name: ci
         run: npm ci
