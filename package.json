@@ -9,6 +9,7 @@
     "dev": "npm run build -- --watch",
     "build": "tsup src/index.ts --dts --format cjs,esm --target=node12",
     "lint": "eslint --ext .ts src",
+    "format": "prettier --cache --write .",
     "type-check": "tsc --noEmit"
   },
   "repository": {
@@ -37,7 +38,6 @@
     "@typescript-eslint/parser": "^5.3.1",
     "eslint": "^8.2.0",
     "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
     "rollup": "^2.60.0",
     "tsup": "^5.7.0",
