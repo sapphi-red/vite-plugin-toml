@@ -7,7 +7,7 @@ Toml file plugin for rollup/vite.
 > The name starts with `vite-plugin-`, but this is a historical reason.
 > This plugin **does** support rollup too.
 
-Uses [`@ltd/j-toml` package](https://www.npmjs.com/package/@ltd/j-toml) for parsing.
+Uses [`toml-eslint-parser` package](https://www.npmjs.com/package/toml-eslint-parser) for parsing.
 Supports Toml 1.0.0.
 
 ## Install
@@ -27,10 +27,6 @@ export default {
 ```
 
 ### Options
-
-- `useBigInt` (default: `true`)
-
-https://github.com/LongTengDao/j-toml/tree/master/docs/English#usebigint
 
 - `namedExports` (default: `false`)
 

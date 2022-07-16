@@ -1,14 +1,12 @@
 import type { Plugin, TransformHook } from 'rollup'
-import { parse } from '@ltd/j-toml'
+import { parseTOML, getStaticTOMLValue } from 'toml-eslint-parser'
 import { dataToEsm } from '@rollup/pluginutils'
 
 export interface ViteTomlOptions {
-  useBigInt?: boolean
   namedExports?: boolean
 }
 
 export const ViteToml = ({
-  useBigInt = true,
   namedExports = false
 }: ViteTomlOptions = {}): Plugin => {
   const transform: TransformHook = function (code, id) {
@@ -16,8 +14,9 @@ export const ViteToml = ({
       return null
     }
 
-    const parsed = parse(code, 1.0, '\n', useBigInt, undefined)
-    const newCode = dataToEsm(parsed, {
+    const parsed = parseTOML(code)
+    const value = getStaticTOMLValue(parsed)
+    const newCode = dataToEsm(value, {
       preferConst: true,
       compact: false,
       namedExports,
