@@ -1,5 +1,4 @@
-import type { TransformHook } from 'rollup'
-import type { Plugin } from 'vite'
+import type { Plugin, TransformHook } from 'rollup'
 import { parse } from '@ltd/j-toml'
 import { dataToEsm } from '@rollup/pluginutils'
 

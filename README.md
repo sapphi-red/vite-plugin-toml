@@ -2,9 +2,10 @@
 
 [![npm version](https://badge.fury.io/js/vite-plugin-toml.svg)](https://badge.fury.io/js/vite-plugin-toml) ![automatic deploy](https://github.com/sapphi-red/vite-plugin-toml/workflows/automatic%20deploy/badge.svg) [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-Toml file plugin for vite.
+Toml file plugin for rollup/vite.
 
-> **Vite v2 is supported from `v0.2.x`, Vite v1 is not supported from this version**
+> The name starts with `vite-plugin-`, but this is a historical reason.
+> This plugin **does** support rollup too.
 
 Uses [`@ltd/j-toml` package](https://www.npmjs.com/package/@ltd/j-toml) for parsing.
 Supports Toml 1.0.0.
