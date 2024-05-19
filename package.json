@@ -60,6 +60,6 @@
   },
   "dependencies": {
     "@rollup/pluginutils": "^5.0.5",
-    "toml-eslint-parser": "^0.6.0"
+    "toml-eslint-parser": "^0.9.3"
   }
 }
