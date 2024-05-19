@@ -20,7 +20,7 @@
   },
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup src/index.ts --dts --format cjs,esm --target=node12.22",
+    "build": "tsup src/index.ts --dts --format cjs,esm --target=node14.17",
     "lint": "eslint --ext .ts src",
     "format": "prettier --cache --write .",
     "type-check": "tsc --noEmit"
