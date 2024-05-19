@@ -8,6 +8,9 @@ on:
 jobs:
   release:
     name: deploy
+    permissions:
+      contents: read
+      id-token: write
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -23,6 +26,6 @@ jobs:
       - name: build
         run: npm run build
       - name: deploy
-        run: npm publish
+        run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
