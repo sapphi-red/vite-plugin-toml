@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-toml",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "A plugin for rollup/vite to import a toml file.",
   "type": "module",
   "main": "dist/index.js",
