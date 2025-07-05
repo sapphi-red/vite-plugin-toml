@@ -1,16 +1,15 @@
 {
   "compilerOptions": {
-    "target": "es2018",
+    "target": "esnext",
     "module": "esnext",
     "strict": true,
     "noUncheckedIndexedAccess": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "resolveJsonModule": true,
     "esModuleInterop": true,
     "isolatedModules": true,
     "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "lib": ["ES2016"],
+    "lib": ["ESNext"],
     "skipLibCheck": true,
     "incremental": true,
     "tsBuildInfoFile": "./node_modules/.tsbuildinfo"
