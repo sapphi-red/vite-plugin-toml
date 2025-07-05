@@ -11,7 +11,7 @@ const runTransformWithOptions = (
   if (typeof plugin.transform !== 'function') {
     throw new Error('Transform is not a function')
   }
-  return plugin.transform.call({} as TransformPluginContext, code, id)
+  return plugin.transform.call({} as TransformPluginContext, code, id) as string
 }
 const runTransform = (code: string, id: string) => {
   return runTransformWithOptions({}, code, id)
