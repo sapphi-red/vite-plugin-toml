@@ -49,17 +49,17 @@
     "rollup": "^2.77.0 || ^3.0.0 || ^4.0.0"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "^7.9.0",
-    "@typescript-eslint/parser": "^7.9.0",
-    "eslint": "^8.57.0",
+    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/parser": "^7.18.0",
+    "eslint": "^8.57.1",
     "eslint-config-prettier": "^9.1.0",
-    "prettier": "^3.2.5",
-    "rollup": "^4.17.2",
+    "prettier": "^3.6.2",
+    "rollup": "^4.44.2",
     "tsup": "^7.3.0",
-    "typescript": "^5.4.5"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@rollup/pluginutils": "^5.0.5",
-    "toml-eslint-parser": "^0.9.3"
+    "@rollup/pluginutils": "^5.2.0",
+    "toml-eslint-parser": "^0.10.0"
   }
 }
