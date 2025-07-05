@@ -3,24 +3,12 @@
   "version": "0.7.0",
   "description": "A plugin for rollup/vite to import a toml file.",
   "type": "module",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "types": "dist/index.d.ts",
   "exports": {
-    ".": {
-      "import": {
-        "types": "./dist/index.d.ts",
-        "default": "./dist/index.js"
-      },
-      "require": {
-        "types": "./dist/index.d.cts",
-        "default": "./dist/index.cjs"
-      }
-    }
+    ".": "./dist/index.js"
   },
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup src/index.ts --dts --format cjs,esm --target=node14.17",
+    "build": "tsup src/index.ts --dts --format esm --target=node20.19,node22.12",
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint --cache .",
@@ -39,7 +27,7 @@
     "dist"
   ],
   "engines": {
-    "node": "^14.17.0 || >=16.0.0"
+    "node": "^20.19.0 || >=22.12.0"
   },
   "author": "sapphi-red",
   "license": "MIT",
