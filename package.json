@@ -8,7 +8,7 @@
   },
   "scripts": {
     "dev": "npm run build -- --watch",
-    "build": "tsup src/index.ts --dts --format esm --target=node20.19,node22.12",
+    "build": "tsdown src/index.ts --dts --format esm --target=node20",
     "test": "vitest",
     "test:run": "vitest run",
     "lint": "eslint --cache .",
@@ -45,7 +45,7 @@
     "eslint-config-prettier": "^10.1.5",
     "prettier": "^3.6.2",
     "rollup": "^4.44.2",
-    "tsup": "^7.3.0",
+    "tsdown": "^0.12.9",
     "typescript": "^5.8.3",
     "typescript-eslint": "^8.35.1",
     "vitest": "^3.2.4"
