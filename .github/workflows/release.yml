@@ -1,4 +1,4 @@
-name: automatic deploy
+name: automatic release
 
 on:
   push:
@@ -7,7 +7,6 @@ on:
 
 jobs:
   release:
-    name: deploy
     permissions:
       contents: read
       id-token: write
@@ -16,7 +15,5 @@ jobs:
       - uses: actions/checkout@v5
       - uses: ./.github/actions/setup-repo
       - run: pnpm run build
-      - name: deploy
-        run: pnpm publish --provenance --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: release
+        run: npm i -g npm@^11.5.2 && pnpm publish --provenance --no-git-checks
