@@ -58,5 +58,16 @@
     "@rollup/pluginutils": "^5.3.0",
     "toml-eslint-parser": "^0.10.0"
   },
+  "compatiblePackages": {
+    "schemaVersion": 1,
+    "vite": {
+      "type": "compatible",
+      "versions": "^5.0.0 || ^6.0.0 || ^7.0.0"
+    },
+    "rolldown": {
+      "type": "compatible",
+      "versions": "^1.0.0-rc.1"
+    }
+  },
   "packageManager": "pnpm@10.24.0"
 }
