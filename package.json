@@ -21,6 +21,8 @@
   },
   "keywords": [
     "vite",
+    "rollup",
+    "rollup-plugin",
     "toml"
   ],
   "files": [
