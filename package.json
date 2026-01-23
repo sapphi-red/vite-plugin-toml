@@ -35,6 +35,10 @@
     "url": "https://github.com/sapphi-red/vite-plugin-toml/issues"
   },
   "homepage": "https://github.com/sapphi-red/vite-plugin-toml#readme",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
   "peerDependencies": {
     "rollup": "^4.0.0"
   },
