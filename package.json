@@ -45,15 +45,15 @@
     "rollup": "^4.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.1",
-    "@types/node": "^22.19.1",
-    "eslint": "^9.39.1",
+    "@eslint/js": "^9.39.2",
+    "@types/node": "^22.19.7",
+    "eslint": "^9.39.2",
     "eslint-config-prettier": "^10.1.8",
-    "prettier": "^3.7.3",
-    "rollup": "^4.53.3",
-    "tsdown": "^0.16.8",
+    "prettier": "^3.8.1",
+    "rollup": "^4.57.1",
+    "tsdown": "^0.20.1",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.48.0",
+    "typescript-eslint": "^8.54.0",
     "vitest": "^4.0.18"
   },
   "dependencies": {
@@ -71,5 +71,5 @@
       "versions": "^1.0.0-rc.1"
     }
   },
-  "packageManager": "pnpm@10.24.0"
+  "packageManager": "pnpm@10.28.2"
 }
