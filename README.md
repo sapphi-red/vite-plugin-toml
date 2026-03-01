@@ -22,7 +22,7 @@ Add plugin in `vite.config.js`.
 import { ViteToml } from 'vite-plugin-toml'
 
 export default {
-  plugins: [ViteToml()]
+  plugins: [ViteToml()],
 }
 ```
 

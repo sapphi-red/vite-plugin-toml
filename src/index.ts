@@ -6,9 +6,7 @@ export interface ViteTomlOptions {
   namedExports?: boolean
 }
 
-export const ViteToml = ({
-  namedExports = false
-}: ViteTomlOptions = {}): Plugin => {
+export const ViteToml = ({ namedExports = false }: ViteTomlOptions = {}): Plugin => {
   const transform: TransformHook = function (code, id) {
     if (!id.endsWith('.toml')) {
       return null
@@ -20,13 +18,13 @@ export const ViteToml = ({
       preferConst: true,
       compact: false,
       namedExports,
-      indent: '  '
+      indent: '  ',
     })
     return newCode
   }
 
   return {
     name: 'toml',
-    transform
+    transform,
   }
 }

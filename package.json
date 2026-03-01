@@ -2,6 +2,29 @@
   "name": "vite-plugin-toml",
   "version": "0.8.7",
   "description": "A plugin for rollup/vite to import a toml file.",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "toml",
+    "vite"
+  ],
+  "homepage": "https://github.com/sapphi-red/vite-plugin-toml#readme",
+  "bugs": {
+    "url": "https://github.com/sapphi-red/vite-plugin-toml/issues"
+  },
+  "license": "MIT",
+  "author": "sapphi-red",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sapphi-red/vite-plugin-toml.git"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/sapphi-red"
+  },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "exports": {
     ".": "./dist/index.mjs"
@@ -14,34 +37,9 @@
     "lint": "oxlint --type-aware --type-check",
     "format": "oxfmt ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sapphi-red/vite-plugin-toml.git"
-  },
-  "keywords": [
-    "vite",
-    "rollup",
-    "rollup-plugin",
-    "toml"
-  ],
-  "files": [
-    "dist"
-  ],
-  "engines": {
-    "node": "^20.19.0 || >=22.12.0"
-  },
-  "author": "sapphi-red",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/sapphi-red/vite-plugin-toml/issues"
-  },
-  "homepage": "https://github.com/sapphi-red/vite-plugin-toml#readme",
-  "funding": {
-    "type": "github",
-    "url": "https://github.com/sponsors/sapphi-red"
-  },
-  "peerDependencies": {
-    "rollup": "^4.0.0"
+  "dependencies": {
+    "@rollup/pluginutils": "^5.3.0",
+    "toml-eslint-parser": "^1.0.3"
   },
   "devDependencies": {
     "@types/node": "^22.19.13",
@@ -53,10 +51,13 @@
     "typescript": "^5.9.3",
     "vitest": "^4.0.18"
   },
-  "dependencies": {
-    "@rollup/pluginutils": "^5.3.0",
-    "toml-eslint-parser": "^1.0.3"
+  "peerDependencies": {
+    "rollup": "^4.0.0"
   },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "packageManager": "pnpm@10.30.3",
   "compatiblePackages": {
     "schemaVersion": 1,
     "vite": {
@@ -67,6 +68,5 @@
       "type": "compatible",
       "versions": "^1.0.0-rc.1"
     }
-  },
-  "packageManager": "pnpm@10.30.3"
+  }
 }

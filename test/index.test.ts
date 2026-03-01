@@ -2,11 +2,7 @@ import { describe, test, expect } from 'vitest'
 import { ViteToml, type ViteTomlOptions } from '../src/index'
 import type { TransformPluginContext } from 'rollup'
 
-const runTransformWithOptions = (
-  options: ViteTomlOptions,
-  code: string,
-  id: string
-) => {
+const runTransformWithOptions = (options: ViteTomlOptions, code: string, id: string) => {
   const plugin = ViteToml(options)
   if (typeof plugin.transform !== 'function') {
     throw new Error('Transform is not a function')
@@ -25,7 +21,7 @@ describe('basic', () => {
 name = "test"
 version = "1.0.0"
 `,
-      'test.toml'
+      'test.toml',
     )
     expect(result).toMatchInlineSnapshot(`
         "export default {
@@ -46,7 +42,7 @@ port = 5432
 name = "John"
 age = 30
 `,
-      'test.toml'
+      'test.toml',
     )
     expect(result).toMatchInlineSnapshot(`
         "export default {
@@ -77,11 +73,7 @@ describe('options', () => {
 title = "Test"
 author = "Test Author"
 `
-    const result = runTransformWithOptions(
-      { namedExports: true },
-      tomlContent,
-      'test.toml'
-    )
+    const result = runTransformWithOptions({ namedExports: true }, tomlContent, 'test.toml')
     expect(result).toMatchInlineSnapshot(`
         "export const title = "Test";
         export const author = "Test Author";
