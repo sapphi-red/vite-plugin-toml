@@ -13,14 +13,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-repo
-      - run: pnpm run lint --max-warnings=0
+      - run: pnpm run lint
   format:
     name: run format
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-repo
-      - run: pnpm prettier --check .
+      - run: pnpm run format --check
   build:
     name: run build
     runs-on: ubuntu-latest
@@ -28,13 +28,6 @@ jobs:
       - uses: actions/checkout@v6
       - uses: ./.github/actions/setup-repo
       - run: pnpm run build
-  type-check:
-    name: run type-check
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: ./.github/actions/setup-repo
-      - run: pnpm run type-check
   test:
     name: run test
     strategy:

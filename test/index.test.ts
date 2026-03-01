@@ -11,6 +11,7 @@ const runTransformWithOptions = (
   if (typeof plugin.transform !== 'function') {
     throw new Error('Transform is not a function')
   }
+  // oxlint-disable-next-line typescript/no-unsafe-type-assertion -- test helper needs type narrowing
   return plugin.transform.call({} as TransformPluginContext, code, id) as string
 }
 const runTransform = (code: string, id: string) => {
