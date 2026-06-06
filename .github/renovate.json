@@ -15,8 +15,7 @@
     },
     {
       "matchDepTypes": ["action"],
-      "pinDigests": true,
-      "matchPackageNames": ["!actions/{/,}**", "!github/{/,}**"]
+      "pinDigests": true
     }
   ],
   "ignoreDeps": ["node"]
