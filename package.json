@@ -62,11 +62,11 @@
     "schemaVersion": 1,
     "vite": {
       "type": "compatible",
-      "versions": "^5.0.0 || ^6.0.0 || ^7.0.0"
+      "versions": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0"
     },
     "rolldown": {
       "type": "compatible",
-      "versions": "^1.0.0-rc.1"
+      "versions": "^1.0.0"
     }
   }
 }
